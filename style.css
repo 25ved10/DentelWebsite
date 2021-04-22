@@ -370,7 +370,7 @@ section{
 }
 
 /*Rooms Section styles*/
-.rooms{
+.dentist{
     background-color: #f2f6f9;
 }
 
@@ -389,13 +389,13 @@ section{
     background-color: var(--blue-transparent-alt);
 }
 
-.room-image{
+.dentist-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.room-name{
+.dentist-speciality{
     font-size: 2.6rem;
     background-color: var(--green-solid);
     color: #fff;
@@ -406,26 +406,20 @@ section{
     z-index: 10;
 }
 
-.room-price{
+.dentist-name{
     display: block;
     font-size: 3.6rem;
     font-weight: bold;
     color: var(--green-solid);
 }
 
-.per-night{
-    color: var(--dark-color);
-    font-size: 1.4rem;
-    font-weight: 100;
-}
-
-.rooms-btn{
+.dentists-btn{
     color: var(--dark-color);
     padding: 0;
     transition: color .5s;
 }
 
-.room-btn:hover{
+.dentist-btn:hover{
     color: var(--green-solid);
 }
 
@@ -644,15 +638,15 @@ section{
     }
 
     /*Rooms section styles*/
-    .rooms-grid{
+    .dentists-grid{
         grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
         grid-gap: 8rem;
     }
-    .featured-rooms{
+    .featured-dentists{
         flex-direction: row;
         align-items: flex-start;
     }
-    .room-image-wrap{
+    .dentist-image-wrap{
         margin-left: 1.5rem;
     }
 }
