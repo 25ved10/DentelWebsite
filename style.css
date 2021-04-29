@@ -185,7 +185,7 @@ section{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("./images/hero_background(1).jpg") center no-repeat;
+    background: url("./images/hero_background.jpg") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -429,7 +429,7 @@ section{
     justify-content: center;
 }
 
-.traveler-wrap{
+.dentist-wrap{
     display: none;
 }
 
@@ -533,11 +533,11 @@ section{
     .contact-content{
         justify-content: space-between;
     }
-    .traveler-wrap{
+    .dentist-wrap{
         display: block;
         flex: 0 0 45%;
     }
-    .traveler-wrap img{
+    .dentist-wrap img{
         width: 100%;
     }
     .contact-form{

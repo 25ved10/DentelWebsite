@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Book Apointment</title>
+        <!--Font awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header-->
+
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <img src="./images/logo_smol_text.png" alt="" >
+                    </a>
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Back</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Main-->
+        <section class="booking"></section>             <!--For the spacing at the top-->
+        <section class="booking" id="Apointment">
+            <div class="container">
+                <form action="" class="book-form-app">
+                    <div class="input-group">
+                        <lable for="name" class="input-lable">Name</lable>
+                        <input type="text" class="input" id="name">
+                    </div>
+                    <div class="input-group">
+                        <lable for="phone" class="input-lable">Phone</lable>
+                        <input type="number" class="input" id="phone" minlength="10" maxlength="10"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    </div>
+                    <div class="input-group">
+                        <lable for="date" class="input-lable">Date For Apointment</lable>
+                        <input type="date" class="input" id="date">
+                    </div>
+                    <div class="input-group">
+                        <lable for="time" class="input-lable">Time For Apointment</lable>        
+                        <input type="time" class="input" id="time" min="09:00" max="21:00">
+                    </div>
+                    <div class="input-group">
+                        <lable for="age" class="input-lable">Age</lable>
+                        <input type="number" class="input" id="age" 
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength="2">
+                    </div>
+                    <div class="input-group">
+                        <lable for="sel-doc" class="input-lable">Select Doctor</lable>
+                        <select class="options" id="sel-doc">
+                            <option value="0">Select</option>
+                            <option value="0">Anyone will be fine</option>
+                            <option value="0">Dr Alexander Sims (General Dentist)</option>
+                            <option value="0">Dr Adam Puddle (Orthodontist)</option>
+                            <option value="0">Dr Gurprit Jandu (Cosmetic Dentest)</option>
+                            <option value="0">Dr Ahmed Badawy (Endodontist)</option>
+                        </select>
+                    </div>
+                    <center>
+                        <button type="submit" class="btn form-btn btn-pur" >Book
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                    </center>
+                </form>    
+            </div>
+        </section>
+
+        <section class="booking"></section>             <!--For the spacing at the Bottom-->
+
+        <!--Footer-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-conteent-band">
+                    <a href="index.html" class="logo">
+                        <img class="logo-image" src="./images/logo_smol_text.png" alt="">
+                    </a>
+                    <div class="paragraph">
+                        Some Info...
+                    </div>
+                </div>
+                <div class="social-media-wrap">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-media">
+                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+    </body>
+</html>
