@@ -35,39 +35,38 @@
         <section class="booking"></section>             <!--For the spacing at the top-->
         <section class="booking" id="Apointment">
             <div class="container">
-                <form action="" class="book-form-app">
+                <form action="insert.php" class="book-form-app" method="POST">
                     <div class="input-group">
                         <lable for="name" class="input-lable">Name</lable>
-                        <input type="text" class="input" id="name">
+                        <input type="text" class="input" id="pname" name="pname" required>
                     </div>
                     <div class="input-group">
                         <lable for="phone" class="input-lable">Phone</lable>
-                        <input type="number" class="input" id="phone" minlength="10" maxlength="10"
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-                    </div>
+                        <input type="number" class="input" id="phoneno" name="phoneno" minlength="10" maxlength="10"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+                    </div>        
                     <div class="input-group">
                         <lable for="date" class="input-lable">Date For Apointment</lable>
-                        <input type="date" class="input" id="date">
+                        <input type="date" class="input" id="pdate" name="pdate" required>
                     </div>
                     <div class="input-group">
                         <lable for="time" class="input-lable">Time For Apointment</lable>        
-                        <input type="time" class="input" id="time" min="09:00" max="21:00">
+                        <input type="time" class="input" id="ptime" name="ptime" min="09:00" max="21:00" required>
                     </div>
                     <div class="input-group">
                         <lable for="age" class="input-lable">Age</lable>
-                        <input type="number" class="input" id="age" 
+                        <input type="number" class="input" id="age" name="age"
                             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                            maxlength="2">
+                            maxlength="2" required>
                     </div>
                     <div class="input-group">
                         <lable for="sel-doc" class="input-lable">Select Doctor</lable>
-                        <select class="options" id="sel-doc">
-                            <option value="0">Select</option>
-                            <option value="0">Anyone will be fine</option>
-                            <option value="0">Dr Alexander Sims (General Dentist)</option>
-                            <option value="0">Dr Adam Puddle (Orthodontist)</option>
-                            <option value="0">Dr Gurprit Jandu (Cosmetic Dentest)</option>
-                            <option value="0">Dr Ahmed Badawy (Endodontist)</option>
+                        <select class="options" id="sel-doc" name="sel_doc" required>
+                            <option value="anyone">Anyone will be fine</option>
+                            <option value="Dr Alexander Sims">Dr Alexander Sims (General Dentist)</option>
+                            <option value="Dr Adam Puddle">Dr Adam Puddle (Orthodontist)</option>
+                            <option value="Dr Gurprit Jandu">Dr Gurprit Jandu (Cosmetic Dentest)</option>
+                            <option value="Dr Ahmed Badawy">Dr Ahmed Badawy (Endodontist)</option>
                         </select>
                     </div>
                     <center>
@@ -75,10 +74,10 @@
                             <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
                         </button>
                     </center>
-                </form>    
+                </form>   
             </div>
         </section>
-
+        
         <section class="booking"></section>             <!--For the spacing at the Bottom-->
 
         <!--Footer-->
@@ -91,15 +90,10 @@
                         <img class="logo-image" src="./images/logo_smol_text.png" alt="">
                     </a>
                     <div class="paragraph">
-                        Some Info...
-                    </div>
-                </div>
-                <div class="social-media-wrap">
-                    <h4 class="footer-heading">Follow Us</h4>
-                    <div class="social-media">
-                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
+                        Address: Siddhivinayak Residency, Shop No.12. Plot No.18, <br>
+                                Near, Shilp Chowk Rd, opposite Domino's Pizza, Sector 20, <br>
+                                Kharghar, Navi Mumbai, Maharashtra 410210 <br>
+                        Phone No.: 087933 20120 <br>
                     </div>
                 </div>
             </div>
